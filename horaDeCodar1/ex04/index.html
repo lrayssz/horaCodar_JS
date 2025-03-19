@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+
+    <script>
+        /*Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.*/
+
+        var baseRetangulo = prompt("Defina o valor da base do retângulo: ")
+        var alturaRetangulo = prompt("Defina o valor da altura do retângulo: ")
+
+        var areaRetangulo = baseRetangulo * alturaRetangulo
+
+        window.alert("A área do retângulo é: " + areaRetangulo)
+
+        var ladoQuadrado = prompt("Defina o valor do lado do quadrado: ")
+
+        var areaQuadrado = ladoQuadrado * ladoQuadrado
+
+        window.alert("A área do quadrado é: " + areaQuadrado)
+
+        var diMaiorLosango = prompt("Defina o valor da diagonal maior do losango: ")
+        var diMenorLosango = prompt("Defina o valor da diagonal menor do losango: ")
+
+        var areaLosango = diMaiorLosango * diMenorLosango / 2
+
+        window.alert("A área do losango é: " + areaLosango)
+
+        var bMaiorTrapezio = prompt("Defina a base maior do trapezio: ")
+        var bMenorTrapezio = prompt("Defina a base menor do trapezio: ")
+        var hTrapezio = prompt("Defina a altura do trapezio: ")
+
+        var areaTrapezio = (bMaiorTrapezio + bMenorTrapezio) * hTrapezio / 2
+
+        window.alert("A área do trapezio é: " + areaTrapezio)
+
+        var baseParalelogramo = prompt("Defina a base do paralelogramo: ")
+        var alturaParelelogramo = prompt("Defina o valor da altura dp paralelogramo: ")
+
+        var areaParalelogramo = baseParalelogramo * alturaParelelogramo
+
+        window.alert("A área do paralelogramo é: " + areaParalelogramo)
+
+        var baseTriangulo = prompt("Defina a base do triângulo: ")
+        var alturaTriangulo = prompt("Defina a altura do triangulo: ")
+
+        var areaTriangulo = baseTriangulo * alturaTriangulo / 2
+
+        window.alert("A área do triângulo é: " + areaTriangulo)
+
+        var raioC = prompt("Defina o raio do círculo: ")
+        const pi = 3.14
+
+        var areaCirculo = pi * (raioC * raioC)
+
+        window.alert("A área do círculo é: " + areaCirculo)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
