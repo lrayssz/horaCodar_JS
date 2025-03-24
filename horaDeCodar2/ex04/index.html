@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+
+    <script>
+        var num1 = Number(prompt("Digite o 1valor: "))
+        var num2 = Number(prompt("Digite o 2valor: "))
+        var num3 = Number(prompt("Digite o 3valor: "))
+        var soma
+
+        if(num1 < num2 && num2 < num3) {
+            soma = num2 + num3
+            window.alert("A soma dos 2 maiores é: " + soma)
+        } else if(num2 < num1 && num2 < num3) {
+            soma = num1 + num3
+            window.alert("A soma dos 2 maiores é: " + soma)
+        } else {
+            soma = num1 + num2
+            window.alert("A soma dos 2 maiores é: " + soma)
+        }
+    </script>
+</head>
+<body>
+    <!--4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.-->
+</body>
+</html>
