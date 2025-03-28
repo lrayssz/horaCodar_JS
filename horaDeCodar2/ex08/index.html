@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex08</title>
+
+    <script>
+        var num1 = Number(prompt("Informe o 1valor: "))
+
+        while(num1 > 10 || num1 < 0) {
+            num1 = Number(prompt("Informe um valor entre 0 e 10: "))
+        }
+
+        var num2 = Number(prompt("Informe o 2valor: "))
+
+        while(num2 > 10 || num2 < 0) {
+            num2 = Number(prompt("Informe um valor entre 0 e 10: "))
+        }
+
+        var num3 = Number(prompt("Informe o 3valor: "))
+
+        while(num3 > 10 || num3 < 0) {
+            num3 = Number(prompt("Informe um valor entre 0 e 10: "))
+        }
+
+        var num4 = Number(prompt("Informe o 4valor"))
+
+        while(num4 > 10 || num4 < 0) {
+            num4 = Number(prompt("Informe um valor entre 0 e 10: "))
+        }
+
+        var soma = num1 + num2 + num3 + num4
+        var media = soma / 4
+
+        if(media >= 5) {
+            window.alert("Parabéns, você passou!")
+        } else {
+            window.alert("Que pena! Você não passou.")
+        }
+
+    
+    </script>
 </head>
 <body>
-    <!--8. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"-->
+    <!--Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"-->
 </body>
 </html>
