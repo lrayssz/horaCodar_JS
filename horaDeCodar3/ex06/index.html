@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06</title>
+
+    <script>
+        var aprovados = 0
+        calculo()
+
+        function calculo() {
+            var nota1 = Number(prompt("Informe a nota em português: "))
+            var nota2 = Number(prompt("Informe a nota em matemática: "))
+
+            var soma = nota1 + nota2
+            var media = soma / 2
+
+            if(media >= 9.5) {
+                window.alert("Parabéns, você passou!")
+                aprovados++
+            } else {
+                window.alert("Que pena! Você não passou.")
+            }
+
+            var resposta = prompt("Calcular a média de outro aluno? S/N")
+
+            switch(resposta) {
+                case "S":
+                    calculo()
+                stop
+
+                case "N":
+                    window.alert("O número de alunos aprovados é: " + aprovados)
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.-->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex07</title>
+
+    <script>
+        var nota1 = Number(prompt("Informe a nota em português: "))
+
+        while(nota1 > 10 || nota1 < 0) {
+            nota1 = Number(prompt("Informe uma nota entre 0 e 10: "))
+        }
+
+        var nota2 = Number(prompt("Informe a nota em matemática: "))
+
+        while(nota2 > 10 || nota2 < 0) {
+            nota2 = Number(prompt("Informe uma nota entre 0 e 10: "))
+        }
+
+        var nota3 = Number(prompt("Informe a nota em geografia: "))
+
+        while(nota3 > 10 || nota3 < 0) {
+            nota3 = Number(prompt("Informe uma nota entre 0 e 10: "))
+        }
+
+        var nota4 = Number(prompt("Informe a nota em artes: "))
+
+        while(nota4 > 10 || nota4 < 0) {
+            nota4 = Number(prompt("Informe uma nota entre 0 e 10: "))
+        }
+
+        var nota5 = Number(prompt("Informe a nota em ciências: "))
+
+        while(nota5 > 10 || nota5 < 0) {
+            nota5 = Number(prompt("Informe uma nota entre 0 e 10: "))
+        }
+
+        var nota6 = Number(prompt("Informe a nota em história: "))
+
+        while(nota6 > 10 || nota6 < 0) {
+            nota6 = Number(prompt("Informe uma nota entre 0 e 10: "))
+        }
+
+        var soma = nota1 + nota2 + nota3 + nota4 + nota5 + nota6
+        var media = soma / 6
+
+        window.alert("A média é: " + media)
+    </script>
+</head>
+<body>
+    <!--Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+    Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. -->
+</body>
+</html>
