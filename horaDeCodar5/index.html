@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horaDeCodar5</title>
+
+    <script>
+		var saldo = 100.5; //Float
+        var nomeUsuario
+
+		function inicio() {
+
+            nomeUsuario = prompt("Informe seu nome: ")
+            alert("Olá " + nomeUsuario + ", é um prazer ter você por aqui!")
+			var escolha = parseInt(prompt("Selecione uma opção: Saldo = 1 | Extrato = 2 | Saque = 3 | Depósito = 4 | Transferência = 5 | Sair = 6"));
+
+            switch(escolha) {
+                case 1:
+                verSaldo()
+                break
+
+                case 2:
+                verExtrato()
+                break
+
+                case 3:
+                fazerSaque()
+                break
+
+                case 4:
+                fazerDeposito()
+                break
+
+                case 5:
+                fazerTransferencia()
+                break
+
+                case 6:
+                sair()
+                break
+
+                case 7:
+                erro()
+            }
+		}		
+
+        function verificacao() {
+            var senha = parseFloat(prompt("Informe sua senha"))
+
+            if(senha == 3589) {
+                alert("Operação autorizada! Siga em frente.")
+            } else {
+                alert("Senha incorreta! Tente novamente.")
+                verificacao()
+            }
+        }
+		function verSaldo() {
+            verificacao()
+			alert("Seu saldo atual é: " + saldo)
+			inicio();
+		}
+
+		function fazerDeposito() {
+            verificacao()
+			var deposito = parseFloat(prompt("Qual o valor para depósito?"))
+			// Not a Number
+			if (isNaN(deposito) || deposito === "") {
+				alert("Por favor, informe um número:")
+				fazerDeposito()
+			} else if(deposito <= 0) {
+                alert("Operação não autorizada! O valor informado não é válido.")
+            } else {
+				saldo += deposito
+				verSaldo()
+			}
+		}
+
+		function fazerSaque() {
+            verificacao()
+			var saque = parseFloat(prompt("Qual o valor para saque?"))
+			if (isNaN(saque) || saque === "") {
+				alert("Por favor, informe um número:")
+				fazerSaque()
+			} else if(saque > saldo) {
+                alert("Operação não autorizada! O valor informado é maior que o saldo")
+                fazerSaque()
+            } else if(saque <= 0) {
+                alert("Operação não autorizada! O valor informado não é válido.")
+                fazerSaque()
+            } else {
+				saldo -= saque
+				
+				verSaldo();
+			}
+		}
+
+        function verExtrato() {
+            verificacao()
+            alert("- R$100,00 em Eletrônicos CIA\n- R$50,00 em Doceria Candy\n+ R$10,00 de Tatiane Santos")
+            inicio()
+        }
+
+        function fazerTransferencia() {
+            verificacao()
+            var numeroTransferencia = parseFloat(prompt("Informe o número da conta: "))
+            var transferencia = parseFloat(prompt("Informe o valor da transferência: "))
+
+            if(transferencia > saldo) {
+                alert("Operação não realizada! O valor informado é maior que o saldo.")
+                fazerTransferencia()
+            } else if(transferencia <= 0) {
+                alert("Operação não autorizada! O valor informado não é válido.")
+                fazerTransferencia()
+            } else {
+                alert("Transferência realizada!")
+                saldo -= transferencia
+                verSaldo()
+            }
+        }
+
+		function erro() {
+			alert("Por favor, informe um número entre 1 e 6");
+			inicio()
+		}
+
+		function sair() {
+			var confirma = confirm("Você deseja sair?");
+			if (confirma) {
+                alert(nomeUsuario + ", foi um prazer ter você por aqui!")
+				window.close()
+			} else {
+				inicio()
+			}
+		}
+
+		
+		
+		inicio()
+	</script>
+</head>
+<body>
+    
+</body>
+</html>
