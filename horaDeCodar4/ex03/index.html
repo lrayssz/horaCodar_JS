@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+
+    <script>
+        var frutas = ["Manga" , "Morango" , "Kiwi" , "Laranja" , "Goiaba"]
+
+        while(frutas.length > 0) {
+            window.alert("A lista de frutas: " + frutas.join(", "))
+            
+            var fruta = prompt("Informe a fruta que deseja remover: ")
+
+            if(frutas.includes(fruta)) {
+                frutas.splice(frutas.indexOf(fruta), 1)
+                window.alert("A fruta foi removida da lista!")
+            } else {
+                window.alert("Fruta indisponível!")
+            }
+        }
+
+        window.alert("Compra finalizada.")
+        
+    </script>
+</head>
+<body>
+    <!--Vamos criar uma lista de compras. 
+
+    Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das frutas.
+
+    Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista". 
+
+    Peça novamente para o usuário digitar o nome de uma fruta para ser removida. 
+
+    Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem "Fruta indisponível no nosso mercado". 
+
+    Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada".-->
+</body>
+</html>

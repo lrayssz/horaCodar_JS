@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+
+    <script>
+        var estudantes = []
+        var nome
+
+        while(true) {
+            nome = prompt("Informe o nome do estudante (Ou 'PARE' para encerrar): ")
+
+            if(nome === "PARE") {
+                break
+            }
+
+            estudantes.push(nome)
+
+        }
+
+        window.alert("Quantidade de estudantes: " + estudantes.length + "\nLista de estudantes: " + estudantes)
+
+    </script>
+</head>
+<body>
+    <!--Crie um programa onde o usuário possa cadastrar estudantes sem limites, e, em seguida, Se o usuário digitar "PARE" o programa deve exibir a quantidade de estudantes cadastrados e a lista com cada um deles. -->
+</body>
+</html>
